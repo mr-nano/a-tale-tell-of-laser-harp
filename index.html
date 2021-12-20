@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>An illustrated tale of laser harp</title>
-</head>
-<body>
-    Hello World
-</body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <style>
+      :root {
+        --footer-font: 1.3rem Roboto;
+        --footer-font-color: black;
+        --footer-padding: 10px;
+        --footer-border: 2px solid black;
+
+        --current-selection-color: green;
+        --changing-selection-hover-color: darkorange;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      footer {
+        color: var(--footer-font-color);
+        font: var(--footer-font);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: var(--footer-padding);
+        border: var(--footer-border);
+
+      }
+      footer ul {
+        display: flex;
+        justify-content: space-between;
+      }
+      footer ul li {
+        list-style-type: none;
+        cursor: pointer;
+      }
+      footer ul li:hover {
+        color: var(--changing-selection-hover-color);
+      }
+      footer ul li::after {
+        content: "▲";
+        display: block;
+        text-align: center;
+      }
+      footer ul li.current-section {
+          color:var(--current-selection-color);
+      }
+
+    </style>
+  </head>
+  <body>
+    <footer>
+      <ul>
+        <li class="current-section">Motivation</li>
+        <li>Theory</li>
+        <li>Experience</li>
+        <li>Lessons learned</li>
+        <li>Aftermath</li>
+      </ul>
+    </footer>
+  </body>
 </html>
