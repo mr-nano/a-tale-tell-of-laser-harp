@@ -24,16 +24,26 @@
         margin: 0;
         padding: 0;
       }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      .container .main {
+        height: 95vh;
+        overflow-y: scroll;
+      }
       footer {
         color: var(--footer-font-color);
         font: var(--footer-font);
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
         padding: var(--footer-padding);
         border: var(--footer-border);
-
+        border-collapse: collapse;
       }
       footer ul {
         display: flex;
@@ -52,20 +62,27 @@
         text-align: center;
       }
       footer ul li.current-section {
-          color:var(--current-selection-color);
+        color: var(--current-selection-color);
       }
-
     </style>
   </head>
   <body>
-    <footer>
-      <ul>
-        <li class="current-section">Motivation</li>
-        <li>Theory</li>
-        <li>Experience</li>
-        <li>Lessons learned</li>
-        <li>Aftermath</li>
-      </ul>
-    </footer>
+    <div class="container">
+      <div class="main">
+        itaque. Culpa, ab facilis dignissimos doloribus, voluptatum, beatae
+        necessitatibus fuga eius minus mollitia quibusdam saepe aliquid ex?
+        Ipsam deleniti cumque dolorem fugiat architecto optio, nesciunt sapiente
+        nemo velit.
+      </div>
+      <footer>
+        <ul>
+          <li class="current-section">Motivation</li>
+          <li>Theory</li>
+          <li>Experience</li>
+          <li>Lessons learned</li>
+          <li>Aftermath</li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
