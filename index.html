@@ -16,7 +16,6 @@
         --footer-border: 2px solid black;
         --footer-item-padding: 10px;
 
-
         --current-selection-color: green;
         --current-selection-background-color: gold;
         --changing-selection-hover-color: darkorange;
@@ -67,9 +66,6 @@
         color: var(--current-selection-color);
         background-color: var(--current-selection-background-color);
       }
-      .theory {
-        translate: 0px 95vh;
-      }
 
       .experience {
         translate: 0px 190vh;
@@ -82,13 +78,36 @@
       .aftermath {
         translate: 0px 380vh;
       }
+      .motivation {
+        height: 95vh;
+        display: flex;
+        /* align-content: space-between; */
+        /* align-items: flex-end; */
+      }
+      .tom-jerry-harp {
+          width: 1000px;
+          height: auto;
+          align-self: flex-end;
+      }
+      .tom-jerry-harp-message {
+          position: relative;
+          align-self: center;
+          text-align: center;
+          font-size: 80px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="main">
         <div class="motivation">
-          <h1>motivation</h1>
+          <img
+            class="tom-jerry-harp"
+            src="1-laser-harp-tom-and-jerry-harp.png"
+          />
+          <div class="tom-jerry-harp-message">
+            As a child, little did I know, that the picture of Tom and Jerry playing the harp will be imprinted in my memory forever.
+          </div>
         </div>
         <div class="theory">
           <h1>theory</h1>
@@ -163,6 +182,5 @@
     };
 
     main.addEventListener("scroll", inView);
-
   </script>
 </html>
