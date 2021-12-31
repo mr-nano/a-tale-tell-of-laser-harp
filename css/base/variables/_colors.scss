@@ -6,7 +6,7 @@
   --nav-bar-active: var(--secondary-color);
   --nav-bar-active-bg: var(--body-bg-alternate);
   --nav-bar-bg: hsl(var(--primary-hue), 60%, 8%);
-  --nav-bar-link: hsl(var(--primary-hue), 60%, 40%);
+  --nav-bar-link: hsl(var(--secondary-hue), 50%, 40%);
 
   // The Body
   --body-bg: hsl(var(--primary-hue), 60%, 6%);
@@ -36,10 +36,6 @@
   --secondary-color: hsl(var(--secondary-hue), 88%, 64%);
   --secondary-color-light: hsl(var(--secondary-hue), 88%, 72%);
   --secondary-button-text-color: hsl(var(--secondary-hue), 0%, 0%);
-
-  // The Card Colors
-  --card-bg: hsl(var(--primary-hue), 60%, 8%);
-  --card-active-bg: hsl(var(--primary-hue), 60%, 10%);
 
   // The Button Defaults
   --default-button-text-color: hsl(var(--primary-hue), 0%, 0%);

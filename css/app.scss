@@ -8,10 +8,16 @@
   main {
     overflow: scroll;
     padding-inline: var(--spacing-milli);
-  }
 
-  .page-segment {
-    min-height: 100%;
+    .page-segment {
+      min-height: 100%;
+
+      &[data-segment-name='motivation'] {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-standard);
+      }
+    }
   }
 
   nav {

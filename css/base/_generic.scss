@@ -1,0 +1,28 @@
+.muted {
+  color: var(--muted-text-color);
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.secondary {
+  color: var(--secondary-color);
+}
+
+.primary-light {
+  color: var(--primary-color-light);
+}
+
+.secondary-light {
+  color: var(--secondary-color-light);
+}
+
+.subtitle {
+  font-size: var(--subtitle-font-size);
+}
+
+.text-center {
+  display: inline-block;
+  text-align: center;
+}

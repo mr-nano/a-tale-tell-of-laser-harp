@@ -1,18 +1,19 @@
 @import "base/variables";
 @import "base/defaults";
 @import "base/buttons";
+@import "base/generic";
 
 * {
-  outline-width: 1px;
   scroll-behavior: smooth;
   outline-color: transparent;
+  outline-width: var(--spacing-single);
   scroll-padding: var(--spacing-standard);
 }
 
 :root {
   ::-webkit-scrollbar {
-    height: var(--spacing-zero);
     width: var(--spacing-zero);
+    height: var(--spacing-zero);
   }
 
 
@@ -22,8 +23,8 @@
     }
 
     ::-webkit-scrollbar-thumb {
-      background: var(--muted-text-color);
       border-radius: 0;
+      background: var(--muted-text-color);
     }
 
     ::-webkit-scrollbar-thumb:hover,
