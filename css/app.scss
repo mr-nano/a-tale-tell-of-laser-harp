@@ -25,19 +25,25 @@
       background: var(--nav-bar-bg);
 
       li {
-        &.active {
-          color: var(--nav-bar-active);
-          background: var(--bottom-nav-tab-active-bg);
-        }
-
         a {
           height: 100%;
           display: block;
           text-decoration: none;
+          color: var(--nav-bar-link);
           padding-block: var(--spacing-standard);
 
-          &:hover {
+          &:hover, &:focus {
+            color: var(--nav-bar-active);
             background: var(--nav-bar-active-bg);
+          }
+        }
+
+        &.active {
+          color: var(--nav-bar-active);
+          background: var(--nav-bar-active-bg);
+
+          a {
+            color: var(--nav-bar-active);
           }
         }
       }
