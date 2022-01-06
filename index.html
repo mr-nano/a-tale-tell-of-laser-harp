@@ -1,186 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>An illustrated tale of laser harp</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto"
-    />
-    <style>
-      :root {
-        --footer-font: 1.3rem Roboto;
-        --footer-font-color: black;
-        --footer-border: 2px solid black;
-        --footer-item-padding: 10px;
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        --current-selection-color: green;
-        --current-selection-background-color: gold;
-        --changing-selection-hover-color: darkorange;
-      }
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border: 2px solid black;
-      }
-      .container .main {
-        height: 95vh;
-        overflow-y: scroll;
-      }
-      footer {
-        color: var(--footer-font-color);
-        font: var(--footer-font);
-        border-top: var(--footer-border);
-      }
-      footer ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      footer ul li {
-        list-style-type: none;
-        cursor: pointer;
-        padding: var(--footer-item-padding);
-        flex-basis: 100%;
-        text-align: center;
-      }
-      footer ul li:hover {
-        color: var(--changing-selection-hover-color);
-      }
-      footer ul li::after {
-        content: "▲";
-        display: block;
-        text-align: center;
-      }
-      footer ul li.current-section {
-        color: var(--current-selection-color);
-        background-color: var(--current-selection-background-color);
-      }
+  <title>An illustrated tale of laser harp</title>
 
-      .experience {
-        translate: 0px 190vh;
-      }
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+  <link rel="stylesheet" href="css/app.scss"/>
 
-      .lessons-learned {
-        translate: 0px 285vh;
-      }
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+<div class="container">
+  <div class="main">
+    <div class="motivation">
+      <img class="tom-jerry-harp" src="1-laser-harp-tom-and-jerry-harp.png" alt=""/>
 
-      .aftermath {
-        translate: 0px 380vh;
-      }
-      .motivation {
-        height: 95vh;
-        display: flex;
-        /* align-content: space-between; */
-        /* align-items: flex-end; */
-      }
-      .tom-jerry-harp {
-          width: 1000px;
-          height: auto;
-          align-self: flex-end;
-      }
-      .tom-jerry-harp-message {
-          position: relative;
-          align-self: center;
-          text-align: center;
-          font-size: 80px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="main">
-        <div class="motivation">
-          <img
-            class="tom-jerry-harp"
-            src="1-laser-harp-tom-and-jerry-harp.png"
-          />
-          <div class="tom-jerry-harp-message">
-            As a child, little did I know, that the picture of Tom and Jerry playing the harp will be imprinted in my memory forever.
-          </div>
-        </div>
-        <div class="theory">
-          <h1>theory</h1>
-        </div>
-        <div class="experience">
-          <h1>experience</h1>
-        </div>
-        <div class="lessons-learned">
-          <h1>lessons</h1>
-        </div>
-        <div class="aftermath">
-          <h1>aftermath</h1>
-        </div>
+      <div class="tom-jerry-harp-message">
+        As a child, little did I know, that the picture of Tom and Jerry playing the harp will be imprinted in my memory
+        forever.
       </div>
-      <footer>
-        <ul>
-          <li class="motivation-marker current-section">Motivation</li>
-          <li class="theory-marker">Theory</li>
-          <li class="experience-marker">Experience</li>
-          <li class="lessons-learned-marker">Lessons learned</li>
-          <li class="aftermath-marker">Aftermath</li>
-        </ul>
-      </footer>
     </div>
-  </body>
-  <script>
-    const main = document.getElementsByClassName("main")[0];
-    let currentMainHeight = main.offsetHeight;
-
-    const motivation = document.getElementsByClassName("motivation")[0];
-    const theory = document.getElementsByClassName("theory")[0];
-    const experience = document.getElementsByClassName("experience")[0];
-    const lessonsLearned =
-      document.getElementsByClassName("lessons-learned")[0];
-    const aftermath = document.getElementsByClassName("aftermath")[0];
-
-    const motivationMarker =
-      document.getElementsByClassName("motivation-marker")[0];
-    const theoryMarker = document.getElementsByClassName("theory-marker")[0];
-    const experienceMarker =
-      document.getElementsByClassName("experience-marker")[0];
-    const lessonsLearnedMarker = document.getElementsByClassName(
-      "lessons-learned-marker"
-    )[0];
-    const aftermathMarker =
-      document.getElementsByClassName("aftermath-marker")[0];
-
-    motivation.marker = motivationMarker;
-    theory.marker = theoryMarker;
-    experience.marker = experienceMarker;
-    lessonsLearned.marker = lessonsLearnedMarker;
-    aftermath.marker = aftermathMarker;
-
-    const inView = function (event) {
-      const targets = [
-        motivation,
-        theory,
-        experience,
-        lessonsLearned,
-        aftermath,
-      ];
-      targets.forEach((target) => {
-        const boundingClientRect = target.getBoundingClientRect();
-        const y = boundingClientRect.y;
-
-        if (y > 0 && y < currentMainHeight) {
-          target.marker.classList.add("current-section");
-        } else {
-          target.marker.classList.remove("current-section");
-        }
-      });
-    };
-
-    main.addEventListener("scroll", inView);
-  </script>
+    <div class="theory">
+      <h1>theory</h1>
+    </div>
+    <div class="experience">
+      <h1>experience</h1>
+    </div>
+    <div class="lessons-learned">
+      <h1>lessons</h1>
+    </div>
+    <div class="aftermath">
+      <h1>aftermath</h1>
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li class="motivation-marker current-section">Motivation</li>
+      <li class="theory-marker">Theory</li>
+      <li class="experience-marker">Experience</li>
+      <li class="lessons-learned-marker">Lessons learned</li>
+      <li class="aftermath-marker">Aftermath</li>
+    </ul>
+  </footer>
+</div>
+</body>
 </html>
