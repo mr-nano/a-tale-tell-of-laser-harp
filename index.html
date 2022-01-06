@@ -7,44 +7,100 @@
 
   <title>An illustrated tale of laser harp</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/theme.scss"/>
   <link rel="stylesheet" href="css/app.scss"/>
 
   <script src="js/main.js" defer></script>
 </head>
-<body>
-<div class="container">
-  <div class="main">
-    <div class="motivation">
-      <img class="tom-jerry-harp" src="1-laser-harp-tom-and-jerry-harp.png" alt=""/>
 
-      <div class="tom-jerry-harp-message">
+<body>
+<div class="app">
+  <main>
+    <section class="page-segment" data-segment-name="motivation" id="motivation-segment">
+      <img class="tom-jerry-harp" src="assets/1-laser-harp-tom-and-jerry-harp.png" alt=""/>
+
+      <p class="tom-jerry-harp-message">
         As a child, little did I know, that the picture of Tom and Jerry playing the harp will be imprinted in my memory
         forever.
-      </div>
-    </div>
-    <div class="theory">
-      <h1>theory</h1>
-    </div>
-    <div class="experience">
-      <h1>experience</h1>
-    </div>
-    <div class="lessons-learned">
-      <h1>lessons</h1>
-    </div>
-    <div class="aftermath">
-      <h1>aftermath</h1>
-    </div>
-  </div>
-  <footer>
+      </p>
+    </section>
+
+    <section class="page-segment" data-segment-name="theory" id="theory-segment">
+      <h1>Theory</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corporis cumque, dolor dolorum earum
+        esse est harum magnam magni nam necessitatibus, omnis quisquam ratione, saepe temporibus ut vero voluptatem
+        voluptates! Accusantium alias, aut consectetur dignissimos doloribus eligendi eum impedit iure minus
+        necessitatibus neque
+        nesciunt omnis perspiciatis possimus provident quo ratione repellat reprehenderit similique ut. Beatae eos ex
+        impedit maiores odio.
+      </p>
+    </section>
+
+    <section class="page-segment" data-segment-name="experience" id="experience-segment">
+      <h1>Experience</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corporis cumque, dolor dolorum earum
+        esse est harum magnam magni nam necessitatibus, omnis quisquam ratione, saepe temporibus ut vero voluptatem
+        voluptates! Accusantium alias, aut consectetur dignissimos doloribus eligendi eum impedit iure minus
+        necessitatibus neque
+        nesciunt omnis perspiciatis possimus provident quo ratione repellat reprehenderit similique ut. Beatae eos ex
+        impedit maiores odio.
+      </p>
+    </section>
+
+    <section class="page-segment" data-segment-name="lessons-learned" id="lessons-learned-segment">
+      <h1>Lessons Learned</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corporis cumque, dolor dolorum earum
+        esse est harum magnam magni nam necessitatibus, omnis quisquam ratione, saepe temporibus ut vero voluptatem
+        voluptates! Accusantium alias, aut consectetur dignissimos doloribus eligendi eum impedit iure minus
+        necessitatibus neque
+        nesciunt omnis perspiciatis possimus provident quo ratione repellat reprehenderit similique ut. Beatae eos ex
+        impedit maiores odio.
+      </p>
+    </section>
+
+    <section class="page-segment" data-segment-name="aftermath" id="aftermath-segment">
+      <h1>Aftermath</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corporis cumque, dolor dolorum earum
+        esse est harum magnam magni nam necessitatibus, omnis quisquam ratione, saepe temporibus ut vero voluptatem
+        voluptates! Accusantium alias, aut consectetur dignissimos doloribus eligendi eum impedit iure minus
+        necessitatibus neque
+        nesciunt omnis perspiciatis possimus provident quo ratione repellat reprehenderit similique ut. Beatae eos ex
+        impedit maiores odio.
+      </p>
+    </section>
+  </main>
+
+  <nav>
     <ul>
-      <li class="motivation-marker current-section">Motivation</li>
-      <li class="theory-marker">Theory</li>
-      <li class="experience-marker">Experience</li>
-      <li class="lessons-learned-marker">Lessons learned</li>
-      <li class="aftermath-marker">Aftermath</li>
+      <li class="motivation-marker current-section active">
+        <a href="#motivation-segment">Motivation</a>
+      </li>
+      <li class="theory-marker">
+        <a href="#theory-segment">Theory</a>
+      </li>
+      <li class="experience-marker">
+        <a href="#experience-segment">Experience</a>
+      </li>
+      <li class="lessons-learned-marker">
+        <a href="#lessons-learned-segment">Lessons learned</a>
+      </li>
+      <li class="aftermath-marker">
+        <a href="#aftermath-segment">Aftermath</a>
+      </li>
     </ul>
-  </footer>
+  </nav>
 </div>
 </body>
 </html>
