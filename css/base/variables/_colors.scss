@@ -1,0 +1,61 @@
+:root {
+  --primary-hue: 270;
+  --secondary-hue: calc(var(--primary-hue) - 16);
+
+  // The Nav Bar
+  --nav-bar-link: hsl(var(--primary-hue), 0%, 60%);
+  --nav-bar-active: var(--secondary-color);
+  --nav-bar-active-bg: var(--body-bg-alternate);
+  --nav-bar-bg: hsl(var(--primary-hue), 60%, 8%);
+
+  // The Bottom Nav Bar
+  --bottom-nav-tab-active: var(--secondary-color);
+  --bottom-nav-tab: var(--nav-bar-link);
+  --bottom-nav-tab-bg: var(--nav-bar-bg);
+  --bottom-nav-tab-active-bg: var(--nav-bar-active-bg);
+
+  // The Body
+  --body-bg: hsl(var(--primary-hue), 60%, 6%);
+  --body-bg-alternate: hsl(var(--primary-hue), 60%, 10%);
+  --horizontal-rule-color: hsl(var(--primary-hue), 0%, 20%);
+  --semi-transperant-bg: hsla(var(--primary-hue), 0%, 5%, .7);
+
+  // The Basic Texts
+  --muted-text-color: hsl(var(--primary-hue), 0%, 60%);
+  --heading-text-color: hsl(var(--primary-hue), 0%, 100%);
+  --paragraph-text-color: hsl(var(--primary-hue), 0%, 85%);
+
+  // Form Inputs
+  --input-text: var(--heading-text-color);
+  --input-hover-text: var(--primary-color);
+  --input-placeholder: var(--muted-text-color);
+  --input-bg: hsl(var(--primary-hue), 60%, 10%);
+  --input-hover-bg: hsl(var(--primary-hue), 60%, 12%);
+  --input-hover-outline: hsl(var(--primary-hue), 60%, 24%);
+
+  // The Primary Color Tones
+  --primary-color: hsl(var(--primary-hue), 88%, 48%);
+  --primary-color-light: hsl(var(--primary-hue), 88%, 64%);
+  --primary-button-text-color: hsl(var(--primary-hue), 0%, 0%);
+
+  // The Secondary Color Tones
+  --secondary-color: hsl(var(--secondary-hue), 88%, 64%);
+  --secondary-color-light: hsl(var(--secondary-hue), 88%, 72%);
+  --secondary-button-text-color: hsl(var(--secondary-hue), 0%, 0%);
+
+  // The Card Colors
+  --card-bg: hsl(var(--primary-hue), 60%, 8%);
+  --card-active-bg: hsl(var(--primary-hue), 60%, 10%);
+
+  // The Button Defaults
+  --default-button-text-color: hsl(var(--primary-hue), 0%, 0%);
+  --default-button-background-color: hsl(var(--primary-hue), 0%, 100%);
+
+  // Others
+  --default-overlay: hsla(var(--primary-hue), 0%, 0%, .48);
+  --default-shadow-color: hsla(var(--primary-hue), 0%, 50%, .16);
+
+  @media (prefers-color-scheme: dark) {
+    --primary-hue: 170;
+  }
+}

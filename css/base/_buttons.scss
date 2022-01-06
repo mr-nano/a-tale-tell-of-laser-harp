@@ -1,0 +1,79 @@
+.primary-button {
+  background-color: var(--primary-color);
+  color: var(--primary-button-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-color-light);
+  }
+
+  &:active {
+    background-color: var(--primary-color);
+  }
+}
+
+.ghost-button {
+  background-color: transparent;
+  color: var(--heading-text-color);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    color: var(--secondary-color-light);
+  }
+}
+
+.secondary-button {
+  background-color: var(--secondary-color);
+  color: var(--secondary-button-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-color-light);
+  }
+
+  &:active {
+    background-color: var(--secondary-color);
+  }
+}
+
+.primary-button-outlined {
+  background-color: transparent;
+  border: var(--spacing-single) solid var(--primary-color);
+  color: var(--primary-color);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-color-light);
+    border-color: var(--primary-color-light);
+  }
+
+  &:active {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+}
+
+.secondary-button-outlined {
+  background-color: transparent;
+  border: var(--spacing-single) solid var(--secondary-color);
+  color: var(--secondary-color);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-color-light);
+    border-color: var(--secondary-color-light);
+  }
+
+  &:active {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+}
+
+.outlined {
+  background: transparent;
+  color: var(--default-button-background-color);
+  border: var(--spacing-single) solid var(--default-button-background-color);
+}

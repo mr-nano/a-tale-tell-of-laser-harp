@@ -1,0 +1,33 @@
+@import "base/variables";
+@import "base/defaults";
+@import "base/buttons";
+
+* {
+  outline-width: 1px;
+  scroll-behavior: smooth;
+  outline-color: transparent;
+}
+
+:root {
+  ::-webkit-scrollbar {
+    height: var(--spacing-zero);
+    width: var(--spacing-zero);
+  }
+
+
+  @media screen and (min-width: $tablet-screen) {
+    ::-webkit-scrollbar {
+      width: var(--spacing-double);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--muted-text-color);
+      border-radius: 0;
+    }
+
+    ::-webkit-scrollbar-thumb:hover,
+    ::-webkit-scrollbar-thumb:active, {
+      background: var(--secondary-color-light);
+    }
+  }
+}

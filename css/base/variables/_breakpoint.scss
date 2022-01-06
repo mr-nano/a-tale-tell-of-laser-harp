@@ -1,0 +1,10 @@
+$mobile-screen: 568px;
+$tablet-screen: 768px;
+$desktop-screen: 1024px;
+
+:root {
+  --mobile-screen: 568px;
+  --tablet-screen: 768px;
+  --max-accessible: 1360px;
+  --desktop-screen: 1024px;
+}
